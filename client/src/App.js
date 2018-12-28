@@ -1,8 +1,7 @@
 import React from 'react'
 import {
   Route,
-  NavLink,
-  HashRouter
+  NavLink
 } from "react-router-dom";
 import Widget from './components/Widget'
 import Home from './components/Home'
