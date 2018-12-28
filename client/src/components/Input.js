@@ -8,14 +8,14 @@ class Input extends Component {
     action: ""
   }
 
-  addTodo = () => {
+  addWidget = () => {
     const task = {action: this.state.action}
 
     if(task.action && task.action.length > 0){
-      axios.post('/api/todos', task)
+      axios.post('/api/widgets', task)
         .then(res => {
           if(res.data){
-            this.props.getTodos();
+            this.props.getWidgets();
             this.setState({action: ""})
           }
         })
@@ -36,7 +36,7 @@ class Input extends Component {
     return (
       <div>
         <input type="text" onChange={this.handleChange} value={action} />
-        <button onClick={this.addTodo}>add todo</button>
+        <button onClick={this.addWidget}>add widget</button>
       </div>
     )
   }

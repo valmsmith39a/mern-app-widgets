@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "start-watch": "nodemon index.js",
+    "install-server-client": "yarn install && cd client && yarn install",
     "dev": "concurrently \"yarn run start-watch\" \"cd client && yarn start\""
   },
   "author": "George",

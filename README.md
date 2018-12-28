@@ -1,6 +1,6 @@
-# Starter MERN (MongoDB, Express, React, Node) Application
+# Sample MERN (MongoDB, Express, React, Node) Application - Widgets
 
-Scaffold for MERN application. Uses Create React App.
+Widgets CRUD application.
 
 ## Getting Started 
 
